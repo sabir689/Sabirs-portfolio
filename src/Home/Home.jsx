@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import img from '../assets/bg remove.png'
 import TypingAnimation from './TypingAnimation';
 
+
 const Home = () => {
     const fixedWord = "I'm a,";
     const changingWords = ['Front End Developer', 'MERN Stack Developer', 'Self Learner'];
@@ -32,28 +33,39 @@ const Home = () => {
                         transition={{ duration: 0.8, delay: 0.8 }}
                         className="mt-4 text-left relative font-bold"
                     >
-                       <TypingAnimation fixedWord={fixedWord} changingWords={changingWords} delay={delay} />
+                        <TypingAnimation fixedWord={fixedWord} changingWords={changingWords} delay={delay} />
                     </motion.h3>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.8 }}
-                        className="mt-4 text-xl text-left"
+                        className="mt-4 text-left"
                     >
-                        Showcase your skills and accomplishments here
+                        Results-driven and highly skilled MERN stack and frontend developer with 2 years of experience in crafting scalable and intuitive web applications.. Experienced in developing RESTful APIs using Node.js, Express, and MongoDB, ensuring secure data management and efficient communication between frontend and backend systems.
                     </motion.p>
-                    <motion.button
-                        initial={{ opacity: 0, scale: 0.5 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.8, delay: 1 }}
-                        className="mt-8 text-white font-semibold py-2 px-4 rounded-full shadow-lg"
-                    >
-                        Download my Resume
-                    </motion.button>
-                    <button className='btn btn-outline btn-primary'>Hire Me</button>
+                    <div className='flex gap-3 mt-4'>
+                        <div>
+
+                            <a href="#_" className="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
+                                <span className="w-full h-full bg-gradient-to-br from-[#804dee] via-[#ff5478] to-[#2b05ff] group-hover:from-[#804dee] group-hover:via-[#ff5478] group-hover:to-[#2b05ff] absolute"></span>
+                                <span className="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
+                                    <span className="relative text-white">Download My Resume</span>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="#_" className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
+                                <span className="w-48 h-48 rounded rotate-[-40deg] bg-[#804dee] absolute bottom-0 left-0 -translate-x-full ease-out duration-1000 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                                <span className="relative w-full text-left text-black transition-colors duration-400 ease-in-out group-hover:text-white">Hire Me</span>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
                 <div className='items-center justify-center'><img className='max-w-xl' src={img} alt="" /></div>
             </header>
+
 
 
             {/* About section */}
@@ -63,20 +75,20 @@ const Home = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-                        className="text-3xl md:text-4xl font-bold text-center   -800"
+                        className="text-3xl md:text-4xl font-bold text-center"
                     >
                         About Me
                     </motion.h2>
-                    
+
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="mt-4 text-lg text-center"
+                        className="mt-2 text-lg text-center"
                     >
                         Share a brief overview of your background, skills, and interests
                     </motion.p>
-                    
+
                 </div>
             </section>
 

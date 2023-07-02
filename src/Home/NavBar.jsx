@@ -9,7 +9,7 @@ const NavBar = () => {
       transition={{ duration: 0.8, delay: 0.4 }}
       className="fixed bottom-0 left-0 right-0 flex justify-center items-center"
     >
-      <div className="text-white bg-white bg-opacity-20 backdrop-blur rounded-full py-5 flex gap-10 px-12 text-2xl">
+      <div className="text-white bg-[#804dee] bg-opacity-30 backdrop-blur rounded-full py-5 flex gap-10 px-12 text-2xl">
         <FaHome className="hover:scale-125 transform transition-all duration-300" title="Home" />
         <FaUser className="hover:scale-125 transform transition-all duration-300" title="About Me" />
         <FaEnvelope className="hover:scale-125 transform transition-all duration-300" title="Contact" />
