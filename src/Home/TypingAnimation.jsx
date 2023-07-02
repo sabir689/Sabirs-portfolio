@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 
 const TypingAnimation = ({ fixedWord, changingWords, delay }) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -36,7 +36,7 @@ const TypingAnimation = ({ fixedWord, changingWords, delay }) => {
   }, [currentWordIndex, currentWord, changingWords, delay, isTyping]);
 
   return (
-    <div className="text-2xl">
+    <div className="text-3xl">
       {fixedWord} {currentWord}
     </div>
   );

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import img from '../assets/bg remove.png'
+import img from '../assets/bg.png'
 import TypingAnimation from './TypingAnimation';
 
 
@@ -8,15 +8,15 @@ const Home = () => {
     const changingWords = ['Front End Developer', 'MERN Stack Developer', 'Self Learner'];
     const delay = 2000;
     return (
-        <div className="min-h-screen text-white">
+        <div className="min-h-screen text-white px-4">
             {/* Hero section */}
-            <header className="py-16 sm:flex items-center justify-center">
-                <div className="container mx-auto px-4">
+            <section className="py-16 sm:flex gap-4 items-center justify-center">
+                <div className="container mx-auto">
                     <motion.h1
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-                        className="text-4xl md:text-6xl font-bold text-left"
+                        className="text-4xl md:text-6xl font-bold text-left mt-0"
                     >
                         <motion.span
                             initial={{ opacity: 0, scale: 0.8 }}
@@ -24,51 +24,66 @@ const Home = () => {
                             transition={{ duration: 0.8, delay: 0.4 }}
                             className="block"
                         >
-                            Hi, I'm <span className=" text-[#804dee]">Azizul Haque Lemon</span>
+                            Hi, I'm <span className="text-[#804dee]">Azizul Haque Lemon</span>
                         </motion.span>
                     </motion.h1>
                     <motion.h3
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.8 }}
-                        className="mt-4 text-left relative font-bold"
+                        className="mt-5 text-left relative font-bold"
                     >
                         <TypingAnimation fixedWord={fixedWord} changingWords={changingWords} delay={delay} />
                     </motion.h3>
                     <motion.p
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.8 }}
-                        className="mt-4 text-left"
+                        className="mt-5 max-w-2xl text-left text-[#d5c8f0]"
                     >
-                        Results-driven and highly skilled MERN stack and frontend developer with 2 years of experience in crafting scalable and intuitive web applications.. Experienced in developing RESTful APIs using Node.js, Express, and MongoDB, ensuring secure data management and efficient communication between frontend and backend systems.
+                        Results-driven and highly skilled MERN stack and frontend developer with 2 years of experience in crafting scalable and intuitive web applications. Experienced in developing RESTful APIs using Node.js, Express, and MongoDB, ensuring secure data management and efficient communication between frontend and backend systems.
                     </motion.p>
-                    <div className='flex gap-3 mt-4'>
-                        <div>
-
-                            <a href="#_" className="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
-                                <span className="w-full h-full bg-gradient-to-br from-[#804dee] via-[#ff5478] to-[#2b05ff] group-hover:from-[#804dee] group-hover:via-[#ff5478] group-hover:to-[#2b05ff] absolute"></span>
-                                <span className="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
-                                    <span className="relative text-white">Download My Resume</span>
-                                </span>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="#_" className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
-                                <span className="w-48 h-48 rounded rotate-[-40deg] bg-[#804dee] absolute bottom-0 left-0 -translate-x-full ease-out duration-1000 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                                <span className="relative w-full text-left text-black transition-colors duration-400 ease-in-out group-hover:text-white">Hire Me</span>
-                            </a>
-                        </div>
-                    </div>
-
                 </div>
-                <div className='items-center justify-center'><img className='max-w-xl' src={img} alt="" /></div>
-            </header>
+                <motion.div
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8, delay: 0.8 }}
+                    className='items-center justify-center'
+                >
+                    <motion.img
+                        className='max-w-xl'
+                        src={img}
+                        alt=""
+                    />
+                </motion.div>
+            </section>
 
 
 
-            {/* About section */}
+            {/* buttons */}
+            <motion.div
+             initial={{ opacity: 0, x: 20 }}
+             animate={{ opacity: 1, x: 0 }}
+             transition={{ duration: 0.8, delay: 0.8 }} className='flex gap-5'>
+                <div>
+
+                    <a href="#_" className="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
+                        <span className="w-full h-full bg-gradient-to-br from-[#804dee] via-[#ff5479d2] to-[#2b05ff] group-hover:from-[#804dee] group-hover:via-[#ff5479b9] group-hover:to-[#2b05ff] absolute"></span>
+                        <span className="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
+                            <span className="relative text-white">DownloadResume</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#_" className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
+                        <span className="w-48 h-48 rounded rotate-[-40deg] bg-[#804dee] absolute bottom-0 left-0 -translate-x-full ease-out duration-1000 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                        <span className="relative w-full text-left text-black transition-colors duration-400 ease-in-out group-hover:text-white">Hire Me</span>
+                    </a>
+                </div>
+            </motion.div>
+
+            {/* About section
             <section className="py-16">
                 <div className="container mx-auto px-4">
                     <motion.h2
@@ -92,7 +107,7 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Contact section */}
+            
             <section className="py-16">
                 <div className="container mx-auto px-4">
                     <motion.h2
@@ -159,7 +174,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </div >
     );
 };
