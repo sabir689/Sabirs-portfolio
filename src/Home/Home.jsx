@@ -1,26 +1,21 @@
 import { motion } from 'framer-motion';
+import img from '../assets/bg remove.png'
+import TypingAnimation from './TypingAnimation';
 
 const Home = () => {
+    const fixedWord = "I'm a,";
+    const changingWords = ['Front End Developer', 'MERN Stack Developer', 'Self Learner'];
+    const delay = 2000;
     return (
         <div className="min-h-screen text-white">
-            {/* Navbar */}
-            <nav className="shadow-lg">
-                <div className="container mx-auto px-4">
-                    {/* Navbar content */}
-                    {/* Add your logo and navigation links here */}
-                </div>
-            </nav>
-
-
-
             {/* Hero section */}
-            <header className="py-16">
+            <header className="py-16 sm:flex items-center justify-center">
                 <div className="container mx-auto px-4">
                     <motion.h1
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-                        className="text-4xl md:text-6xl font-bold text-center  -800"
+                        className="text-4xl md:text-6xl font-bold text-left"
                     >
                         <motion.span
                             initial={{ opacity: 0, scale: 0.8 }}
@@ -28,22 +23,22 @@ const Home = () => {
                             transition={{ duration: 0.8, delay: 0.4 }}
                             className="block"
                         >
-                            Welcome to
-                        </motion.span>
-                        <motion.span
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8, delay: 0.6 }}
-                            className="block text-[#804dee]"
-                        >
-                            My Portfolio
+                            Hi, I'm <span className=" text-[#804dee]">Azizul Haque Lemon</span>
                         </motion.span>
                     </motion.h1>
+                    <motion.h3
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.8 }}
+                        className="mt-4 text-left relative font-bold"
+                    >
+                       <TypingAnimation fixedWord={fixedWord} changingWords={changingWords} delay={delay} />
+                    </motion.h3>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.8 }}
-                        className="mt-4 text-xl text-center"
+                        className="mt-4 text-xl text-left"
                     >
                         Showcase your skills and accomplishments here
                     </motion.p>
@@ -57,6 +52,7 @@ const Home = () => {
                     </motion.button>
                     <button className='btn btn-outline btn-primary'>Hire Me</button>
                 </div>
+                <div className='items-center justify-center'><img className='max-w-xl' src={img} alt="" /></div>
             </header>
 
 
@@ -71,6 +67,7 @@ const Home = () => {
                     >
                         About Me
                     </motion.h2>
+                    
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -79,7 +76,7 @@ const Home = () => {
                     >
                         Share a brief overview of your background, skills, and interests
                     </motion.p>
-                    {/* Add more content or showcase your work here */}
+                    
                 </div>
             </section>
 
@@ -139,7 +136,7 @@ const Home = () => {
                                     ></textarea>
                                 </div>
                                 <div className="block">
-                                                     <button
+                                    <button
                                         type="submit"
                                         className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow-lg transition-colors duration-300"
                                     >
