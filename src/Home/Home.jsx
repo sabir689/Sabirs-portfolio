@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div className="min-h-screen text-white px-4">
             {/* Hero section */}
-            <section className="py-16 sm:flex gap-4 items-center justify-center">
+            <section className="pt-8 sm:flex gap-4 items-center justify-center">
                 <div className="container mx-auto">
                     <motion.h1
                         initial={{ opacity: 0, y: -20 }}
