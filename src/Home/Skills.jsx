@@ -10,12 +10,16 @@ import img8 from '../assets/firebase.png'
 import img9 from '../assets/github.png'
 import img10 from '../assets/mongodb.png'
 import ProgressBar from "@ramonak/react-progress-bar";
+import { motion } from 'framer-motion';
+import { Fade } from 'react-awesome-reveal'
+
 
 
 
 const Skills = () => {
     return (
-        <div className=''>
+        <Fade>
+            <div className='my-8'>
             <h2 className='text-center text-white font-bold text-4xl'>My <span className='text-[#804dee]'>Skills</span></h2>
             <div className='sm:grid grid-cols-3  text-white items-center justify-between py-10 px-4'>
                 <div className="flex items-center gap-2">
@@ -128,13 +132,13 @@ const Skills = () => {
                     </div>
 
                 </div>
-                <div className="flex gap-6 pb-2">
+                <div className="flex gap-2 pb-2">
                     <div className='w-1/6'>
                         <img className='bg-white rounded-full' src={img9} alt="" />
                     </div>
                     <div>
                         <h3 className='font-semibold text-lg'>Github</h3>
-                        <ProgressBar bgColor='#804dee' className='w-52' completed="80%"></ProgressBar>
+                        <ProgressBar completed={80} className='w-52' bgColor='#804dee'></ProgressBar>
                         
                         
                     </div>
@@ -142,6 +146,7 @@ const Skills = () => {
                 </div>
             </div>
         </div>
+        </Fade>
     );
 };
 
