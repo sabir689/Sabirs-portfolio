@@ -20,7 +20,7 @@ const Skills = () => {
         <Fade>
             <div className='my-8 px-14'>
             <h2 className='text-center text-white font-bold text-4xl'>My <span className='text-[#804dee]'>Skills</span></h2>
-            <div className='sm:grid grid-cols-3  text-white items-center justify-between py-10 px-4'>
+            <div className='sm:grid md:grid-cols-2 lg:grid-cols-3  text-white items-center justify-between py-10 px-4'>
                 <div className="flex items-center gap-2">
                     <div className='w-1/6'>
                         <img src={img} alt="" />
