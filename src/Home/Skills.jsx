@@ -24,7 +24,7 @@ const Skills = () => {
                     </div>
                     <div>
                         <h3 className='font-semibold text-lg'>HTML</h3>
-                      <ProgressBar completed={80} className='w-52' bgColor='#804dee'></ProgressBar>
+                      <ProgressBar completed={85} className='w-52' bgColor='#804dee'></ProgressBar>
                        
                     </div>
 
@@ -134,7 +134,7 @@ const Skills = () => {
                     </div>
                     <div>
                         <h3 className='font-semibold text-lg'>Github</h3>
-                        <ProgressBar bgColor='#804dee' className='w-52' completed="60%"></ProgressBar>
+                        <ProgressBar bgColor='#804dee' className='w-52' completed="80%"></ProgressBar>
                         
                         
                     </div>

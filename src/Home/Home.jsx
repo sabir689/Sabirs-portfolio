@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import img from '../assets/bg.png'
 import TypingAnimation from './TypingAnimation';
-import { FaFacebookF, FaGithub,  FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookF, FaGithub,  FaICursor,  FaLinkedinIn } from 'react-icons/fa';
 
 
 const Home = () => {
@@ -72,7 +72,7 @@ const Home = () => {
                     <a href="#_" className="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
                         <span className="w-full h-full bg-gradient-to-br from-[#804dee] via-[#ff5479d2] to-[#2b05ff] group-hover:from-[#804dee] group-hover:via-[#ff5479b9] group-hover:to-[#2b05ff] absolute"></span>
                         <span className="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
-                            <span className="relative text-white">DownloadResume</span>
+                            <span className="relative text-white">Download Resume</span>
                         </span>
                     </a>
                 </div>
