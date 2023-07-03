@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import img from '../assets/bg.png'
 import TypingAnimation from './TypingAnimation';
+import { FaFacebookF, FaGithub,  FaLinkedinIn } from 'react-icons/fa';
 
 
 const Home = () => {
@@ -8,7 +9,7 @@ const Home = () => {
     const changingWords = ['Front End Developer', 'MERN Stack Developer', 'Self Learner'];
     const delay = 2000;
     return (
-        <div className="min-h-screen text-white px-4">
+        <div className=" text-white px-4">
             {/* Hero section */}
             <section className="pt-8 sm:flex gap-4 items-center justify-center">
                 <div className="container mx-auto">
@@ -54,6 +55,7 @@ const Home = () => {
                         className='max-w-xl'
                         src={img}
                         alt=""
+
                     />
                 </motion.div>
             </section>
@@ -62,9 +64,9 @@ const Home = () => {
 
             {/* buttons */}
             <motion.div
-             initial={{ opacity: 0, x: 20 }}
-             animate={{ opacity: 1, x: 0 }}
-             transition={{ duration: 0.8, delay: 0.8 }} className='flex gap-5'>
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }} className='flex gap-5 sm:mt-8'>
                 <div>
 
                     <a href="#_" className="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md">
@@ -82,6 +84,24 @@ const Home = () => {
                     </a>
                 </div>
             </motion.div>
+
+            <div className='my-8 flex gap-10'>
+                <a href="#_" className="relative inline-flex items-center justify-center btn btn-outline btn-circle border-[#804dee] overflow-hidden font-mono font-medium tracking-tighter text-[#804dee] bt group">
+                    <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#804dee] rounded-full group-hover:w-56 group-hover:h-56"></span>
+                    <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent"></span>
+                    <span className="relative"><FaFacebookF></FaFacebookF></span>
+                </a>
+                <a href="#_" className="relative inline-flex items-center justify-center btn btn-outline btn-circle border-[#804dee] overflow-hidden font-mono font-medium tracking-tighter text-[#804dee] bt group">
+                    <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#804dee] rounded-full group-hover:w-56 group-hover:h-56"></span>
+                    <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent"></span>
+                    <span className="relative"><FaGithub></FaGithub></span>
+                </a>
+                <a href="#_" className="relative inline-flex items-center justify-center btn btn-outline btn-circle border-[#804dee] overflow-hidden font-mono font-medium tracking-tighter text-[#804dee] bt group">
+                    <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-[#804dee] rounded-full group-hover:w-56 group-hover:h-56"></span>
+                    <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent"></span>
+                    <span className="relative"><FaLinkedinIn></FaLinkedinIn></span>
+                </a>
+            </div>
 
             {/* About section
             <section className="py-16">
