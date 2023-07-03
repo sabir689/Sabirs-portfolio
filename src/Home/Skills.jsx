@@ -10,7 +10,6 @@ import img8 from '../assets/firebase.png'
 import img9 from '../assets/github.png'
 import img10 from '../assets/mongodb.png'
 import ProgressBar from "@ramonak/react-progress-bar";
-import { motion } from 'framer-motion';
 import { Fade } from 'react-awesome-reveal'
 
 
@@ -19,7 +18,7 @@ import { Fade } from 'react-awesome-reveal'
 const Skills = () => {
     return (
         <Fade>
-            <div className='my-8'>
+            <div className='my-8 px-14'>
             <h2 className='text-center text-white font-bold text-4xl'>My <span className='text-[#804dee]'>Skills</span></h2>
             <div className='sm:grid grid-cols-3  text-white items-center justify-between py-10 px-4'>
                 <div className="flex items-center gap-2">

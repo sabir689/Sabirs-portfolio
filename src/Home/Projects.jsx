@@ -9,7 +9,7 @@ const Projects = () => {
         <Fade>
             <h2 className='text-center text-white font-bold text-4xl mb-12'>My <span className='text-[#804dee]'>Projects</span></h2>
                 <div className="flex items-center justify-center">
-                    <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+                    <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                         <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
                             <div className="h-96 w-72">
                                 <img className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src={img} alt="" />
