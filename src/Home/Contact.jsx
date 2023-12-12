@@ -1,19 +1,38 @@
 import { useRef } from 'react';
 import { Fade } from 'react-awesome-reveal';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 const ContactForm = () => {
     const form = useRef();
+
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_gnmxapb', 'template_pnp1xiy', form.current, 'fYsVn41L0_R-xa48-')
+        emailjs.sendForm('service_6rq4z3m', 'template_2ygjxje', form.current, '9HUU9vp6JakC2eTcr')
             .then((result) => {
                 console.log(result.text);
-            }, (error) => {
+                
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success!',
+                    text: 'Your message has been sent successfully.',
+                }).then(() => {
+                    
+                    window.location.reload();
+                  });
+            })
+            .catch((error) => {
                 console.log(error.text);
+            
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error!',
+                    text: 'Oops... Something went wrong!',
+                });
             });
     };
+
 
     return (
         <Fade>
