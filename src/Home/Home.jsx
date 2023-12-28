@@ -42,7 +42,7 @@ const Home = () => {
                         transition={{ duration: 0.8, delay: 0.8 }}
                         className="mt-5 max-w-2xl text-left text-[#d5c8f0]"
                     >
-                        Results-driven and highly skilled MERN stack and frontend developer with 2 years of experience in crafting scalable and intuitive web applications. Experienced in developing RESTful APIs using Node.js, Express, and MongoDB, ensuring secure data management and efficient communication between frontend and backend systems.
+                        Results-driven and highly skilled MERN stack and frontend developer with 1 years of experience in crafting scalable and intuitive web applications. Experienced in developing RESTful APIs using Node.js, Express, and MongoDB, ensuring secure data management and efficient communication between frontend and backend systems.
                     </motion.p>
                 </div>
                 <motion.div
@@ -52,7 +52,7 @@ const Home = () => {
                     className='items-center justify-center'
                 >
                     <motion.img
-                        className='max-w-xl'
+                        className='max-w-xl '
                         src={img}
                         alt=""
 
